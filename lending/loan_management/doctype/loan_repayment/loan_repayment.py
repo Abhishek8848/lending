@@ -136,6 +136,7 @@ class LoanRepayment(AccountsController):
 		loan_restructure.status = "Approved"
 		loan_restructure.save()
 		loan_restructure.submit()
+		
 
 	def set_repayment_account(self):
 		if not self.payment_account and self.mode_of_payment:
